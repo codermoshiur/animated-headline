@@ -2,212 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Testimonial Slider</title>
-    <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <meta name="viewport" width="device-width, initial-scale=1.0">
+    <title>Swiper Slider</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+ 
+     <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-lazy" style="background-image: url(img/slide1.jpg);">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                <div class="slider-content">
+                    <p>Global Grand Event on Digital Design</p>
+                    <h1>Design Thinking Conference</h1>
+                    <a href="#" class="btn btn-common btn-lg">Get Ticket</a>
+                    <a href="#" class="btn btn-border">Explore More</a>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-lazy" style="background-image: url(img/slide2.jpg);">
+               <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                <div class="slider-content">
+                    <p>Global Grand Event on Digital Design</p>
+                    <h1>22 Amazing Speakers</h1>
+                    <a href="#" class="btn btn-border">Learn More</a>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-lazy" style="background-image: url(img/slide3.jpg);">
+               <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                <div class="slider-content">
+                    <p>Global Grand Event on Digital Design</p>
+                    <h1>Book Your Seat Now!</h1>
+                    <a href="#" class="btn btn-common btn-lg">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-pagination"></div>
+    </div>
   
-    <div id="testimonial" class="section-padding">
-      <div class="container">
-          <div class="owl-carousel owl-theme wow fadeInUp" data-wow-delay="1s">
-              <div class="item">
-                  <div class="testimonial-item">
-                      <div class="img-thumb">
-                          <img src="img/t1.jpg" alt="David">
-                      </div>
-                      <div class="info">
-                          <h2>
-                              <a href="#">David</a>
-                          </h2>
-                          <h3>
-                              <a href="#">Web Developer</a>
-                          </h3>
-                      </div>
-                      <div class="content">
-                          <div class="description">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi soluta assumenda, itaque earum, consectetur consequatur iure amet! Numquam, odio earum!</p>
-                          </div>
-                          <div class="star-icon">
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-half"></i>
-                              </span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="item">
-                  <div class="testimonial-item">
-                      <div class="img-thumb">
-                          <img src="img/t2.jpg" alt="Smith">
-                      </div>
-                      <div class="info">
-                          <h2>
-                              <a href="#">Smith</a>
-                          </h2>
-                          <h3>
-                              <a href="#">Web Designer</a>
-                          </h3>
-                      </div>
-                      <div class="content">
-                          <div class="description">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi soluta assumenda, itaque earum, consectetur consequatur iure amet! Numquam, odio earum!</p>
-                          </div>
-                          <div class="star-icon">
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-half"></i>
-                              </span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="item">
-                  <div class="testimonial-item">
-                      <div class="img-thumb">
-                          <img src="img/t3.jpg" alt="Florian">
-                      </div>
-                      <div class="info">
-                          <h2>
-                              <a href="#">Florian</a>
-                          </h2>
-                          <h3>
-                              <a href="#">Web Developer</a>
-                          </h3>
-                      </div>
-                      <div class="content">
-                          <div class="description">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi soluta assumenda, itaque earum, consectetur consequatur iure amet! Numquam, odio earum!</p>
-                          </div>
-                          <div class="star-icon">
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-half"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-half"></i>
-                              </span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="item">
-                  <div class="testimonial-item">
-                      <div class="img-thumb">
-                          <img src="img/t4.jpg" alt="Max">
-                      </div>
-                      <div class="info">
-                          <h2>
-                              <a href="#">Max</a>
-                          </h2>
-                          <h3>
-                              <a href="#">Web Developer</a>
-                          </h3>
-                      </div>
-                      <div class="content">
-                          <div class="description">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi soluta assumenda, itaque earum, consectetur consequatur iure amet! Numquam, odio earum!</p>
-                          </div>
-                          <div class="star-icon">
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="item">
-                  <div class="testimonial-item">
-                      <div class="img-thumb">
-                          <img src="img/t5.jpg" alt="ALBERT">
-                      </div>
-                      <div class="info">
-                          <h2>
-                              <a href="#">ALBERT</a>
-                          </h2>
-                          <h3>
-                              <a href="#">Graphics Designer</a>
-                          </h3>
-                      </div>
-                      <div class="content">
-                          <div class="description">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi soluta assumenda, itaque earum, consectetur consequatur iure amet! Numquam, odio earum!</p>
-                          </div>
-                          <div class="star-icon">
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-filled"></i>
-                              </span>
-                              <span>
-                                  <i class="lni lni-star-half"></i>
-                              </span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-   </div>
-
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
     
 </body>
 </html>
