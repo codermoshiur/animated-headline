@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&family=Lato&display=swap');
 
 body {
     margin: 0;
@@ -12,20 +12,24 @@ body {
     color: #fff;
 }
 
-h1 {
-    font-family: 'Josefin Sans', sans-serif;
+h1, h5 {
     margin: 0;
-    line-height: 1.2;
-    font-size: 48px;
-    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
     color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 30px;
+    line-height: 1.2;
+    text-transform: capitalize;
 }
 
-p {
-    margin: 0;
+h1 {
+    font-weight: 200;
+    font-size: 60px;
+}
+
+h5 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 a {
@@ -33,85 +37,74 @@ a {
     color: #fff;
 }
 
-.swiper-container {
-    width: 100%;
-    height: 100vh;
-}
-
-.swiper-slide {
+ul {
+    margin: 0;
+    padding: 0;
     text-align: center;
-    font-size: 18px;
-    background: #fff;
-    background-size: cover;
-    background-position: center;
 }
 
-.slider-content {
-    width: 90%;
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.btn {
-    margin: 25px 25px 0px 0px;
+ul li {
+    list-style-type: none;
     display: inline-block;
-    padding: 5px 34px;
-    text-transform: uppercase;
-    font-size: 14px;
 }
 
-.btn-lg {
-    background-color: #E91E63;
-    border: 1px solid #E91E63;
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg.jpg) no-repeat top center / cover;
+    height: 100vh;
+    position: relative;
 }
 
-.btn-common,
-.btn-border {
-    border-radius: 4px;
-    width: 120px;
+.container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 15px;
 }
 
-.btn-lg:hover {
-    background: #F50057;
-    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+.v-middle {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 0;
+    transform: translate(0%, -50%);
 }
 
-.btn-border:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+.caption {
+    text-align: center;
 }
 
-.btn-border {
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid #fff;
+.caption h1 b {
+    font-weight: 400;
 }
 
-@media screen and (max-width: 1199.98px) {
-    .slider-content {
-        width: 100%;
-    }
+.ah-headline.clip .ah-words-wrapper::after {
+    background-color: #fff;
+    height: 80%;
+}
+
+.social-icon {
+    margin-top: 30px;
+}
+
+.social-icon ul li a {
+    background: rgba(0,0,0,0.3);
+    padding: 5px;
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
 }
 
 @media screen and (max-width: 767.98px) {
-    .slider-content {
-        width: 100%;
-    }
-    .btn {
-        margin: 25px 5px 0px 0px;
-    }
-}
-
-@media screen and (max-width: 575.98px) {
-    .swiper-button-next, .swiper-button-prev {
-        display: none;
-    }
-    .btn {
-        margin: 25px 0px 0px 0px;
-    }
     h1 {
-        font-size: 32px;
+        font-size: 35px;
+    }
+    h5 {
+        font-size: 40px;
+    }
+    .v-middle {
+        top: 50%;
     }
 }
